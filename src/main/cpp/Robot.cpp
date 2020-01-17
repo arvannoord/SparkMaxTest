@@ -74,7 +74,7 @@ void Robot::TeleopInit() {}
 
 void Robot::TeleopPeriodic() {
   if(js1->GetRawButton(1)){
-    testPid->SetReference(2000, rev::ControlType::kVelocity);
+    testPid->SetReference(60, rev::ControlType::kVelocity);
     //max=5676
   }
   else{
